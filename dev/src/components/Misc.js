@@ -41,11 +41,12 @@ function Misc() {
         </li>
 
         <li>
-            <strong>A random neural network animation created with JavaScript (not an image / gif) that I like:</strong> 
-            <div className="mt-0" style={{ width: '40%', height: '40%' }}>
-                <NNAnimation />
-            </div>
-            </li>
+      <strong>A random neural network animation created with JavaScript (not an image / gif) that I like:</strong>
+        <div className="mt-0" style={{ width: '40%', height: '40%', margin: '0 auto', display: 'block' }}>
+          <NNAnimation />
+        </div>
+      </li>
+
       </ul>
     </section>
   );

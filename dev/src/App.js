@@ -12,20 +12,21 @@ import AwardsAndHonors from './components/Awards';
 
 function App() {
   return (
-    <div>
+    <div className="flex flex-col min-h-screen">
       <Navbar />
-      <div className="font-sans text-gray-900 mx-4 md:mx-8 lg:mx-24 xl:mx-80">
-      <Home />
-      <About />
-      <Research />
-      <OpenSourceProjects />
-      <AwardsAndHonors />
-      <Misc />
-      <Contact />
+      <div className="font-sans text-gray-900 mx-4 sm:mx-8 md:mx-12 lg:mx-16 xl:mx-24">
+        <Home />
+        <About />
+        <Research />
+        <OpenSourceProjects />
+        <AwardsAndHonors />
+        <Misc />
+        <Contact />
+      </div>
       <Footer />
-    </div>
     </div>
   );
 }
+
 
 export default App;

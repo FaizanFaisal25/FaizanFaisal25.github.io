@@ -23,7 +23,7 @@ const OpenSourceProjects = () => {
       link: 'https://github.com/FaizanFaisal25/bert-sst-finetune',
     },
     {
-      title: 'Castorini Code Reproduction',
+      title: 'Castorini Reproduction',
       description: (
         <span>
           Reproduced the results of{' '}
