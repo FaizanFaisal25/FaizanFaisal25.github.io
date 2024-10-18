@@ -34,7 +34,7 @@ const About = () => {
             </a> in the USA) as a Consultant in the Artificial Intelligence Department. My passion lies in both theoretical research and practical engineering applications.
           </p>
           <p className="text-gray-600 leading-relaxed mb-4">
-            My research interests focus on three key areas, listed in no particular order:
+            My research interests focus on four key areas, listed in no particular order:
           </p>
           <ul className="list-disc list-inside space-y-2 text-gray-600 leading-relaxed">
             <li>
