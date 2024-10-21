@@ -1,6 +1,6 @@
 import React from 'react';
 
-// Research projects data including arXiv links
+// Research projects data including drive links
 const researchProjects = [
   {
     title: 'LLMs for Interactive Learning in Human-Robot Interaction (HRI)',
@@ -30,7 +30,7 @@ const researchProjects = [
   {
     title: 'Distribution Hub Optimization: Application of Conditional P-Median Using Road Network Distances (Final Year Project)',
     description: "This case study addresses inefficiencies in last-mile delivery logistics in Pakistan's growing e-commerce sector. Using a GIS-based approach, we apply the conditional p-median problem (p = 1) to optimize the placement of a new logistics hub. Our method calculates road-network-based distances to determine the optimal hub location, factoring in q existing facilities. Using delivery data from Muller and Phipps Logistics Pakistan, we created a distance matrix between candidate hub locations and past delivery points. Simulations were also performed using Lahore's population distribution to handle scenarios without delivery data. The optimized hub placement resulted in a 16% reduction in average delivery distances, improving both operational efficiency and environmental impact.",
-    arxivLink: 'https://arxiv.org/abs/YYYY.YYYYY', // Replace with actual arXiv link
+    driveLink: 'https://drive.google.com/file/d/1f5c3E7ek8xgzDvjXGpB8vo4-avYwHyom/view?usp=sharing', // Google Drive link
     status: 'past',
   },
   // Add more projects as needed
@@ -73,9 +73,9 @@ function Research() {
           {pastProjects.map((project, index) => (
             <li key={index} className="mb-4">
               <h4 className="text-xl font-semibold">{project.title}</h4>
-              {project.arxivLink && (
-                <a href={project.arxivLink} target="_blank" rel="noopener noreferrer" className="text-blue-500 mb-2 block">
-                  [arXiv]
+              {project.driveLink && (
+                <a href={project.driveLink} target="_blank" rel="noopener noreferrer" className="text-blue-500 mb-2 block">
+                  [View Project Document]
                 </a>
               )}
               <p className="text-lg mt-2"><em>{project.description}</em></p>
