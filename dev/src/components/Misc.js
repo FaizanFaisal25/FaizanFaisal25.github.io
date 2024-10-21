@@ -9,7 +9,7 @@ function Misc() {
       <ul className="list-disc pl-6 text-lg">
 
         <li className="mb-4">
-          <strong>Two Books I recently read and enjoyed (I read non-fiction):</strong>
+          <strong>Two books I recently read and enjoyed (I read non-fiction):</strong>
           <ul className="list-disc pl-6 mt-2">
             <li className="mb-2">
               <strong>
@@ -40,12 +40,18 @@ function Misc() {
           </ul>
         </li>
 
+        {/* Added the quote here */}
+        <li className="mb-4">
+          <strong>Favourite Quote: </strong> 
+          <em>"The more you know, the more you realize you don’t know."</em> – Aristotle
+        </li>
+
         <li>
-      <strong>A random neural network animation created with JavaScript (not an image / gif) that I like:</strong>
-        <div className="mt-0" style={{ width: '40%', height: '40%', margin: '0 auto', display: 'block' }}>
-          <NNAnimation />
-        </div>
-      </li>
+          <strong>A random neural network animation created with JavaScript (not an image / gif) that I like:</strong>
+          <div className="mt-0" style={{ width: '40%', height: '40%', margin: '0 auto', display: 'block' }}>
+            <NNAnimation />
+          </div>
+        </li>
 
       </ul>
     </section>

@@ -37,9 +37,7 @@ const About = () => {
             My research interests focus on four key areas, listed in no particular order:
           </p>
           <ul className="list-disc list-inside space-y-2 text-gray-600 leading-relaxed">
-            <li>
-              <strong>Multi-Agent Systems for Generative AI:</strong> Investigating collaborative behaviors among LLM-based agents, including game-theoretic approaches.
-            </li>
+          <li> <strong>Multi-Agent Systems for Generative AI:</strong> Investigating collaborative behaviors among LLM-based agents, including game-theoretic approaches, with integration of Retrieval-Augmented Generation (RAG) techniques to enhance information access and decision-making processes. </li>
             <li>
               <strong>Security in Large Language Models:</strong> Exploring vulnerabilities and developing protective strategies for LLMs.
             </li>
