@@ -8,7 +8,7 @@ const Contact = () => {
         <h2 className="text-4xl font-bold text-gray-800 mb-6">Contact</h2>
         <p className="text-gray-600 mb-4">
           I'm interested in connecting with fellow researchers and potential collaborators.
-          Feel free to reach out!
+          Feel free to reach out via e-mail!
         </p>
         <p className="text-gray-600">
         </p>

@@ -34,7 +34,7 @@ const About = () => {
             </a> in the USA) as a Consultant in the Artificial Intelligence Department. My passion lies in both theoretical research and practical engineering applications.
           </p>
           <p className="text-gray-600 leading-relaxed mb-4">
-            My research interests focus on four key areas, listed in no particular order:
+          My research interests focus on four key areas, listed in no particular order, though they are not limited to these alone:
           </p>
           <ul className="list-disc list-inside space-y-2 text-gray-600 leading-relaxed">
           <li> <strong>Multi-Agent Systems for Generative AI:</strong> Investigating collaborative behaviors among LLM-based agents, including game-theoretic approaches, with integration of Retrieval-Augmented Generation (RAG) techniques to enhance information access and decision-making processes. </li>

@@ -30,7 +30,7 @@ const researchProjects = [
   {
     title: 'Distribution Hub Optimization: Application of Conditional P-Median Using Road Network Distances (Final Year Project)',
     description: "This case study addresses inefficiencies in last-mile delivery logistics in Pakistan's growing e-commerce sector. Using a GIS-based approach, we apply the conditional p-median problem (p = 1) to optimize the placement of a new logistics hub. Our method calculates road-network-based distances to determine the optimal hub location, factoring in q existing facilities. Using delivery data from Muller and Phipps Logistics Pakistan, we created a distance matrix between candidate hub locations and past delivery points. Simulations were also performed using Lahore's population distribution to handle scenarios without delivery data. The optimized hub placement resulted in a 16% reduction in average delivery distances, improving both operational efficiency and environmental impact.",
-    driveLink: 'https://drive.google.com/file/d/1f5c3E7ek8xgzDvjXGpB8vo4-avYwHyom/view?usp=sharing', // Google Drive link
+    driveLink: 'https://arxiv.org/abs/2411.05851', // Google Drive link
     status: 'past',
   },
   // Add more projects as needed
@@ -54,7 +54,7 @@ function Research() {
               <h4 className="text-xl font-semibold">{project.title}</h4>
               {project.arxivLink && (
                 <a href={project.arxivLink} target="_blank" rel="noopener noreferrer" className="text-blue-500 mb-2 block">
-                  [arXiv 2024]
+                  [View Paper on arXiv]
                 </a>
               )}
               {project.underReview && (
@@ -75,7 +75,7 @@ function Research() {
               <h4 className="text-xl font-semibold">{project.title}</h4>
               {project.driveLink && (
                 <a href={project.driveLink} target="_blank" rel="noopener noreferrer" className="text-blue-500 mb-2 block">
-                  [View Project Document]
+                  [View Case Study on arXiv]
                 </a>
               )}
               <p className="text-lg mt-2"><em>{project.description}</em></p>
