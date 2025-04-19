@@ -8,33 +8,40 @@ const About = () => {
       <div className="flex flex-col md:flex-row">
         {/* About Information Column */}
         <div className="md:w-full">
+        <p className="text-gray-600 leading-relaxed mb-4">
+          I am both a researcher and an engineer, committed to advancing the field of NLP. I completed my undergraduate studies in Computer Science at the Lahore University of Management Sciences (<a 
+              href="https://www.lums.edu.pk/" 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              className="text-blue-600 hover:underline"
+          >
+              LUMS
+          </a>). I am also an incoming graduate student in Computer Science at the <a 
+              href="https://cs.ucdavis.edu/" 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              className="text-blue-600 hover:underline"
+          >
+              University of California, Davis
+          </a>. Currently, I am working full-time at <a 
+              href="https://www.systemsltd.com/PK" 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              className="text-blue-600 hover:underline"
+          >
+              Systems Limited
+          </a> (also known as <a 
+              href="https://www.visionet.com/" 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              className="text-blue-600 hover:underline"
+          >
+              Visionet Systems
+          </a> in the USA) as a Consultant in the Artificial Intelligence Department. My passion lies in both theoretical research and practical engineering applications.
+        </p>
+
           <p className="text-gray-600 leading-relaxed mb-4">
-            I am both a researcher and an engineer committed to advancing the field of NLP. I completed my undergraduate studies in Computer Science at the 
-            Lahore University of Management Sciences (<a 
-                href="https://www.lums.edu.pk/" 
-                target="_blank" 
-                rel="noopener noreferrer" 
-                className="text-blue-600 hover:underline"
-            >
-                LUMS
-            </a>). Currently, I am working full-time at <a 
-                href="https://www.systemsltd.com/PK" 
-                target="_blank" 
-                rel="noopener noreferrer" 
-                className="text-blue-600 hover:underline"
-            >
-                Systems Limited
-            </a> (also known as <a 
-                href="https://www.visionet.com/" 
-                target="_blank" 
-                rel="noopener noreferrer" 
-                className="text-blue-600 hover:underline"
-            >
-                Visionet Systems
-            </a> in the USA) as a Consultant in the Artificial Intelligence Department. My passion lies in both theoretical research and practical engineering applications.
-          </p>
-          <p className="text-gray-600 leading-relaxed mb-4">
-          My research interests focus on four key areas, listed in no particular order, though they are not limited to these alone:
+          My research interests include, but are not limited to, the following key areas, listed in no particular order:
           </p>
           <ul className="list-disc list-inside space-y-2 text-gray-600 leading-relaxed">
           <li> <strong>Multi-Agent Systems for Generative AI:</strong> Investigating collaborative behaviors among LLM-based agents, including game-theoretic approaches, with integration of Retrieval-Augmented Generation (RAG) techniques to enhance information access and decision-making processes. </li>
@@ -45,7 +52,10 @@ const About = () => {
               <strong>Natural Language Processing for Low-Resource Environments:</strong> Creating methodologies for NLP in constrained settings.
             </li>
             <li>
-              <strong>NLP-based Generative AI Applications:</strong> Focusing on high-impact sectors like medicine and finance.
+            <strong>NLP-based Generative AI Applications:</strong> These applications focus on high-impact sectors like medicine, healthcare, and finance.
+            </li>
+            <li>
+              <strong>Human-Centered NLP and HCI:</strong> Advancing the integration of NLP and generative AI into interactive systems, emphasizing usability, transparency, and adaptability to human needs in collaborative and assistive contexts.
             </li>
           </ul>
         </div>

@@ -18,7 +18,7 @@ const Home = () => {
           <h1 className="text-4xl font-bold text-gray-800">Faizan Faisal</h1>
           <p className="mt-2 text-gray-600">Research Field: Natural Language Processing (NLP)</p>
           <p className="mt-4 text-gray-600">
-            Email: fzan (dot) fasl (at) gmail (dot) com
+            Email: fznfaisal@ucdavis.edu
           </p>
           <div className="mt-4">
             <h2 className="text-lg font-semibold text-gray-800">Connect with me:</h2>

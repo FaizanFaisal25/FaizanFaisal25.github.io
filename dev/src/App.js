@@ -9,6 +9,7 @@ import OpenSourceProjects from './components/Projects';
 import Contact from './components/Contact';
 import Misc from './components/Misc';
 import AwardsAndHonors from './components/Awards';
+import TalksPresentations from './components/TalksPresentation';
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
         <Research />
         <OpenSourceProjects />
         <AwardsAndHonors />
+        <TalksPresentations />
         <Misc />
         <Contact />
       </div>
