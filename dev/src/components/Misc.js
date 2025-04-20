@@ -56,9 +56,6 @@ function Misc() {
           <strong className="text-gray-800">
             A random neural network animation created with JavaScript (not an image / gif) that I like:
           </strong>
-          <p className="text-gray-600 mt-1">
-            Below is an interactive canvas rendering of the animation:
-          </p>
           <div
             className="mt-4 mx-auto block"
             style={{ width: '40%', height: '40%' }}

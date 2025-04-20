@@ -43,7 +43,7 @@ const TalksPresentations = () => {
                 />
               </a>
             </div>
-            <p className="text-gray-500 mt-1">{talk.description}</p>
+            <p className="text-gray-600 mt-1">{talk.description}</p>
           </li>
         ))}
       </ul>
