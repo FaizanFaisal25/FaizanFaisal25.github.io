@@ -15,7 +15,7 @@ function App() {
   return (
     <div className="flex flex-col min-h-screen">
       <Navbar />
-      <div className="font-sans text-gray-900 mx-4 sm:mx-8 md:mx-12 lg:mx-32 xl:mx-96">
+      <div className="font-sans text-gray-900 mx-4 sm:mx-8 md:mx-12 lg:mx-32 xl:mx-84">
         <Home />
         <About />
         <Research />
