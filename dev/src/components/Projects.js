@@ -44,7 +44,7 @@ const OpenSourceProjects = () => {
 
   return (
     <section className="container mx-auto px-6 py-10" id="open-source-projects">
-      <h2 className="text-4xl font-bold text-gray-800 mb-12">Open Source Projects</h2>
+      <h2 className="text-4xl font-bold text-black mb-12">Open Source Projects</h2>
       <ul className="list-disc pl-5 space-y-4 text-gray-600">
         {projects.map((project, index) => (
           <li key={index}>
@@ -63,7 +63,7 @@ const OpenSourceProjects = () => {
                 />
               </a>
             </div>
-            <p className="text-gray-500 mt-1">{project.description}</p>
+            <p className="text-gray-600 mt-1">{project.description}</p>
           </li>
         ))}
       </ul>

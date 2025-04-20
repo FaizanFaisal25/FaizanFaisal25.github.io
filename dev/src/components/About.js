@@ -4,7 +4,7 @@ import React from 'react';
 const About = () => {
   return (
     <section className="container mx-auto px-6 py-10" id="about">
-      <h2 className="text-4xl font-bold text-gray-800 mb-6">About Me</h2>
+      <h2 className="text-4xl font-bold text-black mb-6">About Me</h2>
       <div className="flex flex-col md:flex-row">
         {/* About Information Column */}
         <div className="md:w-full">

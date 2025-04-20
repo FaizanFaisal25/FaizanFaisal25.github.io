@@ -98,7 +98,7 @@ function Research() {
                 </p>
               )}
 
-              <p className="text-lg italic">{project.description}</p>
+              <p className="text-gray-600 italic">{project.description}</p>
             </li>
           ))}
         </ul>
@@ -121,7 +121,7 @@ function Research() {
                   [View on arXiv]
                 </a>
               )}
-              <p className="text-lg italic">{project.description}</p>
+              <p className="text-gray-600 italic">{project.description}</p>
             </li>
           ))}
         </ul>

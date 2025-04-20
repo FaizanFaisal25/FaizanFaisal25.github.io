@@ -30,8 +30,8 @@ const Home = () => {
           {/* Right: Info */}
           <div className="w-full md:w-1/2 px-4 text-white text-center md:text-left break-words">
             <h1 className="text-4xl font-bold">Faizan Faisal</h1>
-            <p className="mt-2">Research Area: NLP / AI / HCI</p>
-            <p className="mt-4">Email: fznfaisal@ucdavis.edu</p>
+            <p className="mt-2"><strong>Research Area:</strong> NLP / AI / HCI</p>
+            <p className="mt-4"><strong>Email:</strong> fznfaisal@ucdavis.edu</p>
             <div className="mt-4">
               <div className="flex justify-center md:justify-start space-x-4 mt-2">
                 <a

@@ -14,14 +14,14 @@ const AwardsAndHonors = () => {
 
   return (
     <section className="container mx-auto px-6 py-10" id="awards-and-honors">
-      <h2 className="text-4xl font-bold text-gray-800 mb-12">Awards & Honors</h2>
-      <ul className="list-disc pl-5 space-y-4 text-gray-600">
+      <h2 className="text-4xl font-bold text-black mb-12">Awards & Honors</h2>
+      <ul className="list-disc pl-5 space-y-4 text-gray-800">
         {awards.map((award, index) => (
           <li key={index}>
             <div className="flex items-center space-x-2">
               <span className="text-2xl font-semibold mb-2">{award.title}</span>
             </div>
-            <p className="text-gray-500 mt-1">{award.description}</p>
+            <p className="text-gray-600 mt-1">{award.description}</p>
           </li>
         ))}
       </ul>

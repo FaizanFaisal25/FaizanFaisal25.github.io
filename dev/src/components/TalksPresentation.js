@@ -24,7 +24,7 @@ const TalksPresentations = () => {
 
   return (
     <section className="container mx-auto px-6 py-10" id="talks-presentations">
-      <h2 className="text-4xl font-bold text-gray-800 mb-12">Recent Talks / Presentations</h2>
+      <h2 className="text-4xl font-bold text-black mb-12">Recent Talks / Presentations</h2>
       <ul className="list-disc pl-5 space-y-4 text-gray-600">
         {talks.map((talk, index) => (
           <li key={index}>
