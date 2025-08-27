@@ -21,7 +21,7 @@ const researchProjects = [
     status: 'current',
     conference: 'Activity and Behavior Computing 2025',
     conferenceLink: 'https://autocare.ai/abc2025',
-    paperLink: 'https://drive.google.com/file/d/1a5xoFlGS97QmBL8HwtgAfJycnJHjnd-m/view',
+    paperLink: 'https://ieeexplore.ieee.org/document/11118419',
   },
   {
     title: 'LEGAL-UQA: A Low-Resource Urdu-English Dataset for Legal Question Answering',
