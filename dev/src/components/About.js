@@ -9,35 +9,14 @@ const About = () => {
         {/* About Information Column */}
         <div className="md:w-full">
         <p className="text-gray-600 leading-relaxed mb-4">
-          I am both a researcher and an engineer, committed to advancing the field of NLP. I completed my undergraduate studies in Computer Science at the Lahore University of Management Sciences (<a 
-              href="https://www.lums.edu.pk/" 
-              target="_blank" 
-              rel="noopener noreferrer" 
-              className="text-blue-600 hover:underline"
-          >
-              LUMS
-          </a>). I am also an incoming graduate student in Computer Science at the <a 
+          I am both a researcher and an engineer, committed to advancing the field of NLP. I am a current graduate student in Computer Science at the <a 
               href="https://cs.ucdavis.edu/" 
               target="_blank" 
               rel="noopener noreferrer" 
               className="text-blue-600 hover:underline"
           >
               University of California, Davis
-          </a>. Currently, I am working full-time at <a 
-              href="https://www.systemsltd.com/PK" 
-              target="_blank" 
-              rel="noopener noreferrer" 
-              className="text-blue-600 hover:underline"
-          >
-              Systems Limited
-          </a> (also known as <a 
-              href="https://www.visionet.com/" 
-              target="_blank" 
-              rel="noopener noreferrer" 
-              className="text-blue-600 hover:underline"
-          >
-              Visionet Systems
-          </a> in the USA) as a Consultant in the Artificial Intelligence Department. My passion lies in both theoretical research and practical engineering applications.
+          </a>. My passion lies in both theoretical research and practical engineering applications.
         </p>
 
           <p className="text-gray-600 leading-relaxed mb-4">
