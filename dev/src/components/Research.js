@@ -18,7 +18,7 @@ const researchProjects = [
         (Western Sydney University), I served as the first co-author on this research, which presents a modular framework that leverages advanced LLMs as adaptive moderators in collaborative learning environments. The system enhances engagement, inclusivity, and reflective learning through dynamic prompt adjustments, real-time feedback, and balanced participation. It addresses limitations of static moderation and demonstrates scalability across subjects and learner groups.
       </>
     ),
-    status: 'current',
+    status: 'past',
     conference: 'Activity and Behavior Computing 2025',
     conferenceLink: 'https://autocare.ai/abc2025',
     paperLink: 'https://ieeexplore.ieee.org/document/11118419',
@@ -111,6 +111,29 @@ function Research() {
           {pastProjects.map((project, idx) => (
             <li key={idx} className="mb-4">
               <h4 className="text-xl font-semibold">{project.title}</h4>
+               {/* Accepted at conference */}
+                            {/* Link to paper */}
+              {project.paperLink && (
+                <a
+                  href={project.paperLink}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-blue-500 block mb-2"
+                >
+                  [View Paper]
+                </a>
+              )}
+
+              {project.conferenceLink && (
+                <a
+                  href={project.conferenceLink}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-green-600 block mb-1"
+                >
+                  [Published at IEEE {project.conference}]
+                </a>
+              )}
               {project.driveLink && (
                 <a
                   href={project.driveLink}
