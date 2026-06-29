@@ -1,23 +1,32 @@
 {
   "files": {
-    "main.css": "/static/css/main.998d0fcf.css",
-    "main.js": "/static/js/main.ba2ebcc9.js",
+    "main.css": "/static/css/main.acf6a593.css",
+    "main.js": "/static/js/main.de630a73.js",
     "static/js/453.f840d209.chunk.js": "/static/js/453.f840d209.chunk.js",
+    "static/media/ghostnet.png": "/static/media/ghostnet.959337b42ab7aad8bc22.png",
+    "static/media/davis_campus.png": "/static/media/davis_campus.1bf920c21f37ab84e4dd.png",
+    "static/media/optimization_project.png": "/static/media/optimization_project.9927e81e698f8aaeeeb5.png",
+    "static/media/llmgametheory_gif.gif": "/static/media/llmgametheory_gif.83e4579c2dd72db931ba.gif",
+    "static/media/argueai.png": "/static/media/argueai.c8542669a89690243a60.png",
     "static/media/fa-solid-900.ttf": "/static/media/fa-solid-900.07ed6d5fa32c1d54af0f.ttf",
+    "static/media/IEEE_Paper_Diagram.png": "/static/media/IEEE_Paper_Diagram.f28ba712a10d19e0b57d.png",
     "static/media/fa-brands-400.ttf": "/static/media/fa-brands-400.0ff70dcbf135d859ebf3.ttf",
     "static/media/fa-solid-900.woff2": "/static/media/fa-solid-900.93f719f4d62bfa3e748c.woff2",
+    "static/media/soap_paper.png": "/static/media/soap_paper.fc9a8e6ac42fb87ea072.png",
     "static/media/fa-brands-400.woff2": "/static/media/fa-brands-400.bb8d5a145e22822103fb.woff2",
+    "static/media/profile_photo.jpg": "/static/media/profile_photo.c5c30568260f5bd09194.jpg",
     "static/media/fa-regular-400.ttf": "/static/media/fa-regular-400.17a6e1aebccdbaa39e78.ttf",
+    "static/media/legaluqa.png": "/static/media/legaluqa.dca85e6fe47e7f7bf89c.png",
     "static/media/fa-regular-400.woff2": "/static/media/fa-regular-400.bc3722686635b5f86132.woff2",
     "static/media/fa-v4compatibility.ttf": "/static/media/fa-v4compatibility.0f6cb412603527bda691.ttf",
     "static/media/fa-v4compatibility.woff2": "/static/media/fa-v4compatibility.6cfec8414be20e2c3426.woff2",
     "index.html": "/index.html",
-    "main.998d0fcf.css.map": "/static/css/main.998d0fcf.css.map",
-    "main.ba2ebcc9.js.map": "/static/js/main.ba2ebcc9.js.map",
+    "main.acf6a593.css.map": "/static/css/main.acf6a593.css.map",
+    "main.de630a73.js.map": "/static/js/main.de630a73.js.map",
     "453.f840d209.chunk.js.map": "/static/js/453.f840d209.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.998d0fcf.css",
-    "static/js/main.ba2ebcc9.js"
+    "static/css/main.acf6a593.css",
+    "static/js/main.de630a73.js"
   ]
 }

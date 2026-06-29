@@ -1,42 +1,70 @@
-// src/components/About.js
 import React from 'react';
 
 const About = () => {
   return (
-    <section className="container mx-auto px-6 py-10" id="about">
-      <h2 className="text-4xl font-bold text-black mb-6">About Me</h2>
-      <div className="flex flex-col md:flex-row">
-        {/* About Information Column */}
-        <div className="md:w-full">
-        <p className="text-gray-600 leading-relaxed mb-4">
-          I am both a researcher and an engineer, committed to advancing the field of NLP. I am a current graduate student in Computer Science at the <a 
-              href="https://cs.ucdavis.edu/" 
-              target="_blank" 
-              rel="noopener noreferrer" 
-              className="text-blue-600 hover:underline"
-          >
-              University of California, Davis
-          </a>. My passion lies in both theoretical research and practical engineering applications.
-        </p>
+    <section className="section-shell border-t border-slate-200 dark:border-slate-800" id="about">
+      <div className="page-shell">
+        <p className="section-kicker">About</p>
+        <div className="grid gap-6 lg:grid-cols-[1.1fr_0.9fr] lg:items-start">
+          <div data-reveal="section" className="max-w-2xl">
+            <h2 className="section-title">AI researcher and full-stack engineer focused on dependable applied AI.</h2>
+            <p className="section-intro">
+              I am a graduate student in Computer Science at the{' '}
+              <a
+                href="https://cs.ucdavis.edu/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-link"
+              >
+                University of California, Davis
+              </a>
+              . I currently work at the{' '}
+              <a
+                href="https://decallab.cs.ucdavis.edu/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-link"
+              >
+                DECAL Lab
+              </a>{' '}
+              as a Graduate Student Researcher under{' '}
+              <a
+                href="https://cs.ucdavis.edu/directory/prem-devanbu"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-link"
+              >
+                Prof. Prem Devanbu
+              </a>
+              . My work bridges AI research, practical system building, and
+              full-stack engineering, with an emphasis on reliable language
+              technologies that perform well in high-stakes settings.
+            </p>
+          </div>
 
-          <p className="text-gray-600 leading-relaxed mb-4">
-          My research interests include, but are not limited to, the following key areas, listed in no particular order:
-          </p>
-          <ul className="list-disc list-inside space-y-2 text-gray-600 leading-relaxed">
-          <li> <strong>Multi-Agent Systems for Generative AI:</strong> Investigating collaborative behaviors among LLM-based agents, including game-theoretic approaches, with integration of Retrieval-Augmented Generation (RAG) techniques to enhance information access and decision-making processes. </li>
-            <li>
-              <strong>Security in Large Language Models:</strong> Exploring vulnerabilities and developing protective strategies for LLMs.
-            </li>
-            <li>
-              <strong>Natural Language Processing for Low-Resource Environments:</strong> Creating methodologies for NLP in constrained settings.
-            </li>
-            <li>
-            <strong>NLP-based Generative AI Applications:</strong> These applications focus on high-impact sectors like medicine, healthcare, and finance.
-            </li>
-            <li>
-              <strong>Human-Centered NLP and HCI:</strong> Advancing the integration of NLP and generative AI into interactive systems, emphasizing usability, transparency, and adaptability to human needs in collaborative and assistive contexts.
-            </li>
-          </ul>
+          <div data-reveal="card" className="surface-card p-5 sm:p-6">
+            <p className="text-sm font-semibold uppercase tracking-[0.24em] text-brand-700 dark:text-brand-400">
+              Current Focus
+            </p>
+            <ul className="mt-4 space-y-3">
+              <li className="rounded-2xl bg-slate-50 p-3.5 dark:bg-slate-800/80">
+                <h3 className="text-lg font-semibold text-slate-950 dark:text-slate-50">ML4SE</h3>
+                <p className="mt-2 text-sm leading-6 text-slate-600 dark:text-slate-300">
+                  Improving LLMs for code generation and related software
+                  engineering tasks.
+                </p>
+              </li>
+              <li className="rounded-2xl bg-slate-50 p-3.5 dark:bg-slate-800/80">
+                <h3 className="text-lg font-semibold text-slate-950 dark:text-slate-50">
+                  Applied NLP / Generative AI
+                </h3>
+                <p className="mt-2 text-sm leading-6 text-slate-600 dark:text-slate-300">
+                  Building and studying applications with a focus on healthcare,
+                  biomedicine, and finance.
+                </p>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
     </section>

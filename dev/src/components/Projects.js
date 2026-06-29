@@ -1,72 +1,71 @@
 import React from 'react';
+import { FaGithub } from 'react-icons/fa';
+import llmGameTheoryImage from '../assets/projects/llmgametheory_gif.gif';
+import ghostNetImage from '../assets/projects/ghostnet.png';
+import argueAiImage from '../assets/projects/argueai.png';
 
 const OpenSourceProjects = () => {
   const projects = [
     {
       title: 'LLMGameTheory',
-      description: 'A simulation of the Iterated Prisoner’s Dilemma using Large Language Model (LLM) agents that store and utilize interaction history to inform strategic decisions, exploring the dynamics of cooperation.',
+      image: llmGameTheoryImage,
+      description: 'A simulation of the Iterated Prisoner’s Dilemma using LLM agents with memory-driven strategic behavior.',
       link: 'https://github.com/FaizanFaisal25/LLMGameTheory',
     },
     {
       title: 'GhostNet',
-      description: 'GhostNet - A Social Media Platform Simulation Using LLM Agents Inspired by the Dead Internet Theory.',
+      image: ghostNetImage,
+      description: 'A social media platform simulation driven by LLM agents and inspired by the Dead Internet Theory.',
       link: 'https://github.com/FaizanFaisal25/GhostNet',
     },
     {
       title: 'ArgueAI',
-      description: 'ArgueAI is a tool that simulates debates between two AI agents using search engine and language model technologies.',
+      image: argueAiImage,
+      description: 'A debate system where two AI agents argue using search and language model tools.',
       link: 'https://github.com/FaizanFaisal25/ArgueAI',
-    },
-    {
-      title: 'bert-sst-finetune',
-      description: 'This repository focuses on fine-tuning a BERT uncased base model using the Stanford Sentiment Treebank dataset (SST-2) to achieve sentiment analysis.',
-      link: 'https://github.com/FaizanFaisal25/bert-sst-finetune',
-    },
-    {
-      title: 'Castorini Reproduction',
-      description: (
-        <span>
-          Reproduced the results of{' '}
-          <a
-            href="https://cs.uwaterloo.ca/~jimmylin/"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-blue-600 hover:underline"
-          >
-            Professor Jimmy Lin
-          </a>{' '}
-          (University of Waterloo) Information Retrieval libraries, Anserini and Pyserini.
-        </span>
-      ),
-      link: 'https://github.com/castorini/pyserini/pull/1930', // Replace with the actual link
     },
   ];
 
   return (
-    <section className="container mx-auto px-6 py-10" id="open-source-projects">
-      <h2 className="text-4xl font-bold text-black mb-12">Open Source Projects</h2>
-      <ul className="list-disc pl-5 space-y-4 text-gray-600">
-        {projects.map((project, index) => (
-          <li key={index}>
-            <div className="flex items-center space-x-2">
+    <section className="section-shell border-t border-slate-200 dark:border-slate-800" id="open-source-projects">
+      <div className="page-shell">
+        <p className="section-kicker">Projects</p>
+        <h2 className="section-title">Open source work</h2>
+        <p className="section-intro">
+          Selected repositories exploring LLM agents, debate systems, and collaborative AI behavior.
+        </p>
+
+        <div className="mt-10 grid gap-6 md:grid-cols-2 xl:grid-cols-3">
+          {projects.map((project, index) => (
+            <article key={index} data-reveal="card" className="surface-card flex h-full flex-col p-6 sm:p-7">
+              {project.image && (
+                <div className="mb-5 overflow-hidden rounded-2xl border border-slate-200 bg-slate-50 dark:border-slate-800 dark:bg-slate-950/60">
+                  <img
+                    src={project.image}
+                    alt={project.title}
+                    className="h-44 w-full object-cover object-center"
+                  />
+                </div>
+              )}
+              <div className="flex items-start justify-between gap-4">
+                <h3 className="text-xl font-semibold text-slate-950 dark:text-slate-50">{project.title}</h3>
+                <FaGithub className="mt-1 shrink-0 text-lg text-slate-400 dark:text-slate-500" />
+              </div>
+              <p className="mt-4 flex-1 text-sm leading-7 text-slate-600 dark:text-slate-300">
+                {project.description}
+              </p>
               <a
                 href={project.link}
-                className="text-blue-600 hover:underline flex items-center"
+                className="mt-6 inline-flex items-center gap-2 text-sm font-medium text-brand-700 hover:text-brand-600 dark:text-brand-400 dark:hover:text-brand-300"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <span className="text-2xl font-semibold mb-2">{project.title}</span>
-                <img 
-                  src="https://upload.wikimedia.org/wikipedia/commons/9/91/Octicons-mark-github.svg" 
-                  alt="GitHub Logo" 
-                  className="w-5 h-5 ml-1" 
-                />
+                View repository
               </a>
-            </div>
-            <p className="text-gray-600 mt-1">{project.description}</p>
-          </li>
-        ))}
-      </ul>
+            </article>
+          ))}
+        </div>
+      </div>
     </section>
   );
 };

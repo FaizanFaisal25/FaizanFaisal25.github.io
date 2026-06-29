@@ -13,18 +13,28 @@ const AwardsAndHonors = () => {
   ];
 
   return (
-    <section className="container mx-auto px-6 py-10" id="awards-and-honors">
-      <h2 className="text-4xl font-bold text-black mb-12">Awards & Honors</h2>
-      <ul className="list-disc pl-5 space-y-4 text-gray-800">
-        {awards.map((award, index) => (
-          <li key={index}>
-            <div className="flex items-center space-x-2">
-              <span className="text-2xl font-semibold mb-2">{award.title}</span>
-            </div>
-            <p className="text-gray-600 mt-1">{award.description}</p>
-          </li>
-        ))}
-      </ul>
+    <section className="section-shell border-t border-slate-200 dark:border-slate-800" id="awards-and-honors">
+      <div className="page-shell">
+        <p className="section-kicker">Awards</p>
+        <h2 className="section-title">Awards and honors</h2>
+        <p className="section-intro">
+          Academic distinctions that reflect sustained performance and research-oriented rigor.
+        </p>
+
+        <div className="mt-10 grid gap-6 md:grid-cols-2">
+          {awards.map((award, index) => (
+            <article key={index} data-reveal="card" className="surface-card h-full p-6 sm:p-7">
+              <span className="meta-chip">Recognition</span>
+              <h3 className="mt-4 text-xl font-semibold text-slate-950 dark:text-slate-50">
+                {award.title}
+              </h3>
+              <p className="mt-3 text-sm leading-7 text-slate-600 dark:text-slate-300">
+                {award.description}
+              </p>
+            </article>
+          ))}
+        </div>
+      </div>
     </section>
   );
 };

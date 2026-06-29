@@ -1,4 +1,5 @@
 import React from 'react';
+import { FaLinkedin } from 'react-icons/fa';
 
 const TalksPresentations = () => {
   const talks = [
@@ -11,7 +12,7 @@ const TalksPresentations = () => {
             href="https://lums.edu.pk/lums_employee/4394"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-blue-600 hover:underline"
+            className="text-link"
           >
             Dr. Zubair Khalid
           </a>{' '}
@@ -23,30 +24,39 @@ const TalksPresentations = () => {
   ];
 
   return (
-    <section className="container mx-auto px-6 py-10" id="talks-presentations">
-      <h2 className="text-4xl font-bold text-black mb-12">Recent Talks / Presentations</h2>
-      <ul className="list-disc pl-5 space-y-4 text-gray-600">
-        {talks.map((talk, index) => (
-          <li key={index}>
-            <div className="flex items-center space-x-2">
+    <section className="section-shell border-t border-slate-200 dark:border-slate-800" id="talks-presentations">
+      <div className="page-shell">
+        <p className="section-kicker">Talks</p>
+        <h2 className="section-title">Recent talks and presentations</h2>
+        <p className="section-intro">
+          Invited talks and presentations on applied machine learning and practical AI deployment.
+        </p>
+
+        <div className="mt-10 grid gap-6">
+          {talks.map((talk, index) => (
+            <article key={index} data-reveal="card" className="surface-card p-6 sm:p-8">
+              <div className="flex flex-col gap-4 sm:flex-row sm:items-start sm:justify-between">
+                <div>
+                  <span className="meta-chip">Guest lecture</span>
+                  <h3 className="mt-4 text-xl font-semibold leading-snug text-slate-950 dark:text-slate-50 sm:text-2xl">
+                    {talk.title}
+                  </h3>
+                </div>
+              </div>
+              <p className="mt-4 text-base leading-7 text-slate-600 dark:text-slate-300">{talk.description}</p>
               <a
                 href={talk.link}
-                className="text-blue-600 hover:underline flex items-center"
+                className="mt-6 inline-flex items-center gap-2 text-sm font-medium text-brand-700 hover:text-brand-600 dark:text-brand-400 dark:hover:text-brand-300"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <span className="text-2xl font-semibold">{talk.title}</span>
-                <img
-                  src="https://cdn-icons-png.flaticon.com/512/174/174857.png"
-                  alt="LinkedIn Logo"
-                  className="w-5 h-5 ml-1"
-                />
+                <FaLinkedin className="text-base" />
+                View LinkedIn post
               </a>
-            </div>
-            <p className="text-gray-600 mt-1">{talk.description}</p>
-          </li>
-        ))}
-      </ul>
+            </article>
+          ))}
+        </div>
+      </div>
     </section>
   );
 };
