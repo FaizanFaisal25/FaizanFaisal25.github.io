@@ -9,7 +9,7 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        sans: ['Inter', ...defaultTheme.fontFamily.sans],
+        sans: ['"STIX Two Text"', ...defaultTheme.fontFamily.serif],
       },
       colors: {
         brand: {
