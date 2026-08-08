@@ -3,8 +3,24 @@ import collaborativeLearningImage from '../assets/research/IEEE_Paper_Diagram.pn
 import soapPaperImage from '../assets/research/soap_paper.png';
 import legalUqaImage from '../assets/research/legaluqa.png';
 import optimizationProjectImage from '../assets/research/optimization_project.png';
+import advisoryPromptsImage from '../assets/research/advisory_prompts_pipeline.png';
+import bioKgExplorerImage from '../assets/research/biokg_explorer_interface.png';
 
 const researchProjects = [
+  {
+    title: 'Distilling Reasoning Traces into Advisory Prompts for Software Engineering Tasks',
+    image: advisoryPromptsImage,
+    description: 'We distill lessons from reasoning traces into short advisory prompts that help language models avoid coding errors without always paying the cost of reasoning.',
+    paperLink: 'https://doi.org/10.48550/arXiv.2608.00437',
+    status: 'current',
+  },
+  {
+    title: 'BioKG Explorer: Interactive Visual Analytics for Biomedical Knowledge Graph Exploration over PrimeKG',
+    image: bioKgExplorerImage,
+    description: 'BioKG Explorer is a full-stack React, D3, FastAPI, and Neo4j application for no-code exploration, path analysis, and disease-focused analytics over PrimeKG.',
+    paperLink: 'https://www.researchsquare.com/article/rs-10004105/v1',
+    status: 'current',
+  },
   {
     title: 'Dynamic Framework for Collaborative Learning: Leveraging Advanced LLM with Adaptive Feedback Mechanisms',
     image: collaborativeLearningImage,
@@ -24,14 +40,12 @@ const researchProjects = [
     ),
     status: 'past',
     conference: 'Activity and Behavior Computing 2025',
-    conferenceLink: 'https://autocare.ai/abc2025',
-    paperLink: 'https://ieeexplore.ieee.org/document/11118419',
+    conferenceLink: 'https://ieeexplore.ieee.org/document/11118419',
   },
   {
     title: 'When Reasoning Hurts: Source-Aware Evaluation of Frontier LLMs for Clinical SOAP Note Generation',
     image: soapPaperImage,
     description: 'We evaluate whether reasoning and same-source RAG improve SOAP note generation, and find that stronger reasoning does not automatically lead to better clinical documentation.',
-    arxivLink: 'https://arxiv.org/abs/2605.24902',
     paperLink: 'https://doi.org/10.48550/arXiv.2605.24902',
     status: 'current',
   },
@@ -39,14 +53,14 @@ const researchProjects = [
     title: 'LEGAL-UQA: A Low-Resource Urdu-English Dataset for Legal Question Answering',
     image: legalUqaImage,
     description: "LEGAL-UQA is a low-resource Urdu-English legal QA dataset built from Pakistan's constitution to support domain-specific NLP research and access to legal information.",
-    arxivLink: 'https://arxiv.org/abs/2410.13013',
+    paperLink: 'https://doi.org/10.48550/arXiv.2410.13013',
     status: 'past',
   },
   {
     title: 'Distribution Hub Optimization: Application of Conditional P-Median Using Road Network Distances (Final Year Project)',
     image: optimizationProjectImage,
     description: 'This GIS-based logistics study optimized new hub placement for last-mile delivery and reduced average delivery distance by 16%.',
-    driveLink: 'https://arxiv.org/abs/2411.05851',
+    paperLink: 'https://doi.org/10.48550/arXiv.2411.05851',
     status: 'past',
   },
   // Add more projects as needed
@@ -66,15 +80,7 @@ function ProjectLinks({ project }) {
   }
 
   if (project.paperLink) {
-    links.push({ href: project.paperLink, label: 'View paper' });
-  }
-
-  if (project.arxivLink) {
-    links.push({ href: project.arxivLink, label: 'View on arXiv' });
-  }
-
-  if (project.driveLink) {
-    links.push({ href: project.driveLink, label: 'View on arXiv' });
+    links.push({ href: project.paperLink, label: 'View Paper' });
   }
 
   return (
@@ -94,13 +100,11 @@ function ProjectLinks({ project }) {
   );
 }
 
-function ResearchCard({ project, featured = false }) {
+function ResearchCard({ project }) {
   return (
     <article
       data-reveal="card"
-      className={`surface-card p-6 sm:p-8 ${
-        featured ? 'border-brand-200 bg-gradient-to-br from-brand-50 to-white dark:border-brand-700/40 dark:from-slate-900 dark:via-slate-900 dark:to-slate-800' : ''
-      }`}
+      className="surface-card p-6 sm:p-8"
     >
       {project.image && (
         <div className="mb-6 overflow-hidden rounded-2xl border border-slate-200 bg-slate-50 dark:border-slate-800 dark:bg-slate-950/60">
@@ -150,9 +154,9 @@ function Research() {
               </h3>
             </div>
           </div>
-          <div data-reveal="section" className="grid gap-6">
+          <div data-reveal="section" className="grid gap-6 lg:grid-cols-3">
             {currentProjects.map((project, idx) => (
-              <ResearchCard key={idx} project={project} featured />
+              <ResearchCard key={idx} project={project} />
             ))}
           </div>
         </div>
