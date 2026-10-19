@@ -61,17 +61,20 @@ function AcademicLineage() {
                 </p>
                 <div className="mt-4 flex flex-wrap items-center gap-3">
                   <label htmlFor="lineage-destination" className="text-sm text-slate-600">Trace a path to</label>
-                  <select
-                    id="lineage-destination"
-                    value={destinationId}
-                    onChange={(event) => {
-                      setDestinationId(Number(event.target.value));
-                      if (scrollRef.current) scrollRef.current.scrollTop = 0;
-                    }}
-                    className="min-w-0 rounded-lg border border-slate-300 bg-white px-3 py-2 text-sm"
-                  >
-                    {lineage.destinations.map((person) => <option key={person.id} value={person.id}>{person.name}</option>)}
-                  </select>
+                  <div className="relative min-w-0 max-w-full">
+                    <select
+                      id="lineage-destination"
+                      value={destinationId}
+                      onChange={(event) => {
+                        setDestinationId(Number(event.target.value));
+                        if (scrollRef.current) scrollRef.current.scrollTop = 0;
+                      }}
+                      className="block w-full min-w-0 cursor-pointer appearance-none rounded-lg border border-slate-300 bg-white py-2 pl-3 pr-9 text-sm leading-5"
+                    >
+                      {lineage.destinations.map((person) => <option key={person.id} value={person.id}>{person.name}</option>)}
+                    </select>
+                    <FaChevronDown aria-hidden="true" className="pointer-events-none absolute right-3 top-1/2 h-3 w-3 -translate-y-1/2 text-slate-600" />
+                  </div>
                 </div>
               </div>
 
