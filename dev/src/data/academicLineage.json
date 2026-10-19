@@ -1,0 +1,779 @@
+{
+  "sourceDate": "13 October 2026",
+  "destinations": [
+    {
+      "id": 74313,
+      "name": "Isaac Newton",
+      "path": [
+        0,
+        70228,
+        70186,
+        8755,
+        8658,
+        29869,
+        73831,
+        78732,
+        101929,
+        42016,
+        102043,
+        102036,
+        133301,
+        133367,
+        133368,
+        103068,
+        103067,
+        74313
+      ]
+    },
+    {
+      "id": 38586,
+      "name": "Leonhard Euler",
+      "path": [
+        0,
+        70228,
+        70186,
+        8755,
+        44546,
+        8024,
+        8011,
+        805,
+        806,
+        7865,
+        26995,
+        17865,
+        17864,
+        38586
+      ]
+    },
+    {
+      "id": 134975,
+      "name": "Galileo Galilei",
+      "path": [
+        0,
+        70228,
+        70186,
+        8755,
+        8658,
+        29869,
+        73831,
+        78732,
+        101929,
+        42016,
+        102043,
+        102036,
+        133301,
+        133367,
+        133368,
+        103068,
+        103067,
+        74313,
+        67643,
+        133302,
+        134975
+      ]
+    },
+    {
+      "id": 60985,
+      "name": "G. W. Leibniz",
+      "path": [
+        0,
+        70228,
+        70186,
+        8755,
+        44546,
+        8024,
+        8011,
+        805,
+        806,
+        7865,
+        26995,
+        17865,
+        17864,
+        38586,
+        53410,
+        54440,
+        143011,
+        60985
+      ]
+    }
+  ],
+  "people": {
+    "0": {
+      "name": "Faizan Faisal",
+      "education": [
+        "MS · UC Davis · 2027 (expected)"
+      ]
+    },
+    "805": {
+      "name": "Oswald Veblen",
+      "education": [
+        "Ph.D. The University of Chicago 1903"
+      ],
+      "source": "https://www.mathgenealogy.org/id.php?id=805"
+    },
+    "806": {
+      "name": "E. H. (Eliakim Hastings) Moore",
+      "education": [
+        "Ph.D. Yale University 1885"
+      ],
+      "source": "https://www.mathgenealogy.org/id.php?id=806"
+    },
+    "7865": {
+      "name": "H. A. (Hubert Anson) Newton",
+      "education": [
+        "B.A. Yale University 1850"
+      ],
+      "source": "https://www.mathgenealogy.org/id.php?id=7865"
+    },
+    "8011": {
+      "name": "Alonzo Church",
+      "education": [
+        "Ph.D. Princeton University 1927"
+      ],
+      "source": "https://www.mathgenealogy.org/id.php?id=8011"
+    },
+    "8024": {
+      "name": "Dana Stewart Scott",
+      "education": [
+        "Ph.D. Princeton University 1958"
+      ],
+      "source": "https://www.mathgenealogy.org/id.php?id=8024"
+    },
+    "8658": {
+      "name": "Joyce Barbara Friedman",
+      "education": [
+        "Ph.D. Harvard University 1965"
+      ],
+      "source": "https://www.mathgenealogy.org/id.php?id=8658"
+    },
+    "8755": {
+      "name": "(Charles) Raymond Perrault",
+      "education": [
+        "Ph.D. University of Michigan 1975"
+      ],
+      "source": "https://www.mathgenealogy.org/id.php?id=8755"
+    },
+    "17864": {
+      "name": "Joseph Louis Lagrange",
+      "education": [
+        "no degree",
+        "B.A. Università di Torino 1754"
+      ],
+      "source": "https://www.mathgenealogy.org/id.php?id=17864"
+    },
+    "17865": {
+      "name": "Siméon Denis Poisson",
+      "education": [
+        "Ph.D. École Polytechnique 1800"
+      ],
+      "source": "https://www.mathgenealogy.org/id.php?id=17865"
+    },
+    "26995": {
+      "name": "Michel Chasles",
+      "education": [
+        "Ph.D. École Polytechnique 1814"
+      ],
+      "source": "https://www.mathgenealogy.org/id.php?id=26995"
+    },
+    "29869": {
+      "name": "Hao Wang",
+      "education": [
+        "Ph.D. Harvard University 1948"
+      ],
+      "source": "https://www.mathgenealogy.org/id.php?id=29869"
+    },
+    "38586": {
+      "name": "Leonhard Euler",
+      "education": [
+        "Universität Basel 1726"
+      ],
+      "source": "https://www.mathgenealogy.org/id.php?id=38586"
+    },
+    "42016": {
+      "name": "William Hopkins",
+      "education": [
+        "M.A. University of Cambridge 1830"
+      ],
+      "source": "https://www.mathgenealogy.org/id.php?id=42016"
+    },
+    "44546": {
+      "name": "William Chesley Rounds",
+      "education": [
+        "Ph.D. Stanford University 1968"
+      ],
+      "source": "https://www.mathgenealogy.org/id.php?id=44546"
+    },
+    "53410": {
+      "name": "Johann Bernoulli",
+      "education": [
+        "Medicinae Dr. Universität Basel 1690, 1694"
+      ],
+      "source": "https://www.mathgenealogy.org/id.php?id=53410"
+    },
+    "54440": {
+      "name": "Jacob Bernoulli",
+      "education": [
+        "Theol. Dr. Universität Basel 1676",
+        "Dr. hab. Sci. Universität Basel 1684"
+      ],
+      "source": "https://www.mathgenealogy.org/id.php?id=54440"
+    },
+    "60985": {
+      "name": "Gottfried Wilhelm Leibniz",
+      "education": [
+        "Dr. phil. Universität Leipzig 1666",
+        "Dr. jur. Universität Altdorf 1667",
+        "Académie royale des sciences de Paris 1676"
+      ],
+      "source": "https://www.mathgenealogy.org/id.php?id=60985"
+    },
+    "67643": {
+      "name": "Isaac Barrow",
+      "education": [
+        "M.A. University of Cambridge 1652"
+      ],
+      "source": "https://www.mathgenealogy.org/id.php?id=67643"
+    },
+    "70186": {
+      "name": "Alexander Tiberiu Borgida",
+      "education": [
+        "Ph.D. University of Toronto 1977"
+      ],
+      "source": "https://www.mathgenealogy.org/id.php?id=70186"
+    },
+    "70228": {
+      "name": "Premkumar Thomas Devanbu",
+      "education": [
+        "Ph.D. Rutgers University, New Brunswick 1994"
+      ],
+      "source": "https://www.mathgenealogy.org/id.php?id=70228"
+    },
+    "73831": {
+      "name": "Willard Van Orman Quine",
+      "education": [
+        "Ph.D. Harvard University 1932"
+      ],
+      "source": "https://www.mathgenealogy.org/id.php?id=73831"
+    },
+    "74313": {
+      "name": "Isaac Newton",
+      "education": [
+        "M.A. University of Cambridge 1668"
+      ],
+      "source": "https://www.mathgenealogy.org/id.php?id=74313"
+    },
+    "78732": {
+      "name": "Alfred North Whitehead",
+      "education": [
+        "B.A. University of Cambridge 1884"
+      ],
+      "source": "https://www.mathgenealogy.org/id.php?id=78732"
+    },
+    "101929": {
+      "name": "Edward John Routh",
+      "education": [
+        "M.A. University of Cambridge 1857"
+      ],
+      "source": "https://www.mathgenealogy.org/id.php?id=101929"
+    },
+    "102036": {
+      "name": "Thomas Jones",
+      "education": [
+        "M.A. University of Cambridge 1782"
+      ],
+      "source": "https://www.mathgenealogy.org/id.php?id=102036"
+    },
+    "102043": {
+      "name": "Adam Sedgwick",
+      "education": [
+        "M.A. University of Cambridge 1811"
+      ],
+      "source": "https://www.mathgenealogy.org/id.php?id=102043"
+    },
+    "103067": {
+      "name": "Roger Cotes",
+      "education": [
+        "M.A. University of Cambridge 1706"
+      ],
+      "source": "https://www.mathgenealogy.org/id.php?id=103067"
+    },
+    "103068": {
+      "name": "Robert Smith",
+      "education": [
+        "M.A. University of Cambridge 1715"
+      ],
+      "source": "https://www.mathgenealogy.org/id.php?id=103068"
+    },
+    "133301": {
+      "name": "Thomas Postlethwaite",
+      "education": [
+        "M.A. University of Cambridge 1756"
+      ],
+      "source": "https://www.mathgenealogy.org/id.php?id=133301"
+    },
+    "133302": {
+      "name": "Vincenzo Viviani",
+      "education": [
+        "Università di Pisa 1642"
+      ],
+      "source": "https://www.mathgenealogy.org/id.php?id=133302"
+    },
+    "133367": {
+      "name": "Stephen Whisson",
+      "education": [
+        "M.A. University of Cambridge 1742"
+      ],
+      "source": "https://www.mathgenealogy.org/id.php?id=133367"
+    },
+    "133368": {
+      "name": "Walter Taylor",
+      "education": [
+        "M.A. University of Cambridge 1723"
+      ],
+      "source": "https://www.mathgenealogy.org/id.php?id=133368"
+    },
+    "134975": {
+      "name": "Galileo Galilei",
+      "education": [
+        "Università di Pisa 1585"
+      ],
+      "source": "https://www.mathgenealogy.org/id.php?id=134975"
+    },
+    "143011": {
+      "name": "Nicolas Malebranche",
+      "education": [
+        "no degree"
+      ],
+      "source": "https://www.mathgenealogy.org/id.php?id=143011"
+    }
+  },
+  "connections": {
+    "0:70228": {
+      "kind": "MS advising",
+      "note": "My current MS advisor is Prem Devanbu. My degree is expected in 2027.",
+      "sources": []
+    },
+    "70228:70186": {
+      "kind": "Reported doctoral supervision",
+      "note": "Devanbu's university-hosted CV, page 1, explicitly names Alex Borgida as PhD advisor. Rutgers' doctoral alumni register independently records the same relationship and year. Dissertation: Software Information Systems.",
+      "sources": [
+        {
+          "title": "Devanbu's CV · page 1",
+          "url": "https://web.cs.ucdavis.edu/~devanbu/cv.pdf"
+        },
+        {
+          "title": "Rutgers doctoral alumni register",
+          "url": "https://www.cs.rutgers.edu/academics/graduate/ph-d-program/ph-d-alumni"
+        },
+        {
+          "title": "Mathematics Genealogy Project · 70228",
+          "url": "https://www.mathgenealogy.org/id.php?id=70228"
+        }
+      ]
+    },
+    "70186:8755": {
+      "kind": "Reported doctoral supervision",
+      "note": "The search-indexed text of Borgida's September 2022 CV explicitly names Perrault as his PhD advisor. The live PDF returned 404 during this audit; its indexed contents and the live MGP record agree. John Mylopoulos is identified as his MSc advisor, not his PhD advisor. Dissertation: Formal Studies of Stratificational Grammars.",
+      "sources": [
+        {
+          "title": "Borgida's September 2022 CV · indexed text; live PDF unavailable",
+          "url": "https://www.cs.rutgers.edu/~borgida/2022.shortVita.pdf"
+        },
+        {
+          "title": "Mathematics Genealogy Project · 70186",
+          "url": "https://www.mathgenealogy.org/id.php?id=70186"
+        }
+      ]
+    },
+    "8755:8658": {
+      "kind": "Reported doctoral supervision",
+      "note": "Perrault's live MGP record explicitly lists Friedman as Advisor 1. This is the second branch of the same doctorate. The original dissertation's committee page remains uninspected; a database match is not represented as archival proof.",
+      "sources": [
+        {
+          "title": "Mathematics Genealogy Project · 8755",
+          "url": "https://www.mathgenealogy.org/id.php?id=8755"
+        },
+        {
+          "title": "Mathematics Genealogy Project · 8658",
+          "url": "https://www.mathgenealogy.org/id.php?id=8658"
+        },
+        {
+          "title": "William Cohen's account of the shared lineage",
+          "url": "https://www.cs.cmu.edu/~wcohen/lineage.html"
+        }
+      ]
+    },
+    "8658:29869": {
+      "kind": "Reported doctoral supervision",
+      "note": "The live MGP entry names Hao Wang. Stephanie Dick's Harvard dissertation independently describes Friedman as Wang's graduate student, citing oral-history interviews. Her exact graduation date has not been resolved against Harvard's degree register: MGP says 1965, while Peter Andrews' 1968 paper cites her thesis as 1964. Thesis year and degree year may differ; this audit does not assume why.",
+      "sources": [
+        {
+          "title": "Mathematics Genealogy Project · 8658",
+          "url": "https://www.mathgenealogy.org/id.php?id=8658"
+        },
+        {
+          "title": "Stephanie Dick · After Math · p. 108, note 183 · indexed text",
+          "url": "https://dash.harvard.edu/bitstreams/5012763b-3357-46d6-8091-f9ad0d872293/download"
+        },
+        {
+          "title": "Peter Andrews (1968) · reference 5 cites 1964",
+          "url": "https://www.cambridge.org/core/journals/journal-of-symbolic-logic/article/abs/on-simplifying-the-matrix-of-a-wff/C1434A9F1B166AA073EDBAEF948B3D44"
+        }
+      ]
+    },
+    "29869:73831": {
+      "kind": "Reported doctoral supervision",
+      "note": "Charles Parsons and Ti-Grace Atkinson's list of Quine's PhD students, compiled at Harvard and reproduced on the Quine family site, includes Wang (1948). It identifies C. I. Lewis as another name on the acceptance certificate; that alone is not evidence of co-supervision. MGP names Quine.",
+      "sources": [
+        {
+          "title": "Quine's PhD students · Parsons and Atkinson compilation",
+          "url": "https://www.quine.org/wv-quine.html"
+        },
+        {
+          "title": "Mathematics Genealogy Project · 29869",
+          "url": "https://www.mathgenealogy.org/id.php?id=29869"
+        }
+      ]
+    },
+    "73831:78732": {
+      "kind": "Reported doctoral supervision",
+      "note": "Harvard's faculty memorial explicitly states that Quine completed his doctorate under Whitehead. It dates his entry to 1930 and completion two years later; Harvard's dissertation collections page independently identifies PhD 1932.",
+      "sources": [
+        {
+          "title": "Harvard faculty memorial · Quine",
+          "url": "https://news.harvard.edu/gazette/story/2002/05/faculty-of-arts-and-sciences-memorial-minute-6/"
+        },
+        {
+          "title": "Harvard Library · thesis collections",
+          "url": "https://library.harvard.edu/collections/harvard-university-theses-dissertations-and-prize-papers"
+        },
+        {
+          "title": "Mathematics Genealogy Project · 73831",
+          "url": "https://www.mathgenealogy.org/id.php?id=73831"
+        }
+      ]
+    },
+    "78732:101929": {
+      "kind": "Tripos coaching",
+      "note": "St Andrews' Whitehead biography identifies Routh as his coach. This is a connection in undergraduate mathematical education.",
+      "sources": [
+        {
+          "title": "Whitehead biography",
+          "url": "https://mathshistory.st-andrews.ac.uk/Biographies/Whitehead/"
+        },
+        {
+          "title": "Mathematics Genealogy Project · 78732",
+          "url": "https://www.mathgenealogy.org/id.php?id=78732"
+        }
+      ]
+    },
+    "101929:42016": {
+      "kind": "Mathematical coaching",
+      "note": "Routh's Royal Astronomical Society obituary explicitly says he read with Hopkins, within its discussion of private coaching.",
+      "sources": [
+        {
+          "title": "Routh's RAS obituary",
+          "url": "https://mathshistory.st-andrews.ac.uk/Obituaries/Routh_RAS/"
+        }
+      ]
+    },
+    "42016:102043": {
+      "kind": "Recorded advisor link",
+      "note": "The Mathematics Genealogy Project records this connection. Its precise relationship type has not been independently verified; it may represent advising, teaching, or another intellectual relationship.",
+      "sources": [
+        {
+          "title": "Mathematics Genealogy Project · 42016",
+          "url": "https://www.mathgenealogy.org/id.php?id=42016"
+        }
+      ]
+    },
+    "102043:102036": {
+      "kind": "Recorded advisor link",
+      "note": "The Mathematics Genealogy Project records this connection. Its precise relationship type has not been independently verified; it may represent advising, teaching, or another intellectual relationship.",
+      "sources": [
+        {
+          "title": "Mathematics Genealogy Project · 102043",
+          "url": "https://www.mathgenealogy.org/id.php?id=102043"
+        }
+      ]
+    },
+    "102036:133301": {
+      "kind": "Recorded advisor link",
+      "note": "The Mathematics Genealogy Project records this connection. Its precise relationship type has not been independently verified; it may represent advising, teaching, or another intellectual relationship.",
+      "sources": [
+        {
+          "title": "Mathematics Genealogy Project · 102036",
+          "url": "https://www.mathgenealogy.org/id.php?id=102036"
+        }
+      ]
+    },
+    "133301:133367": {
+      "kind": "Cambridge tutoring · recorded by MGP",
+      "note": "The original record identifies Stephen Whisson as Postlethwaite's Cambridge tutor. This is a tutoring link, not a claim of doctoral supervision. Independent archival corroboration remains pending.",
+      "sources": [
+        {
+          "title": "Mathematics Genealogy Project · 133301",
+          "url": "https://www.mathgenealogy.org/id.php?id=133301"
+        }
+      ]
+    },
+    "133367:133368": {
+      "kind": "Cambridge tutoring · recorded by MGP",
+      "note": "Whisson's MGP record explicitly identifies Walter Taylor as his Cambridge tutor. The displayed year belongs to Whisson's M.A., not necessarily the date of the tutoring.",
+      "sources": [
+        {
+          "title": "Mathematics Genealogy Project · 133367",
+          "url": "https://www.mathgenealogy.org/id.php?id=133367"
+        }
+      ]
+    },
+    "133368:103068": {
+      "kind": "Cambridge tutoring · recorded by MGP",
+      "note": "Taylor's MGP record identifies Robert Smith as his Cambridge tutor and notes Smith's connection to Cotes. This link has not been independently verified against a college archive here.",
+      "sources": [
+        {
+          "title": "Mathematics Genealogy Project · 133368",
+          "url": "https://www.mathgenealogy.org/id.php?id=133368"
+        }
+      ]
+    },
+    "103068:103067": {
+      "kind": "Recorded advisor link",
+      "note": "The Mathematics Genealogy Project records this connection. Its precise relationship type has not been independently verified; it may represent advising, teaching, or another intellectual relationship.",
+      "sources": [
+        {
+          "title": "Mathematics Genealogy Project · 103068",
+          "url": "https://www.mathgenealogy.org/id.php?id=103068"
+        }
+      ]
+    },
+    "103067:74313": {
+      "kind": "Editorial collaboration and correspondence",
+      "note": "MGP lists Newton as Cotes' advisor. Newton's own notes document their correspondence while Cotes prepared the second edition of Principia. That primary source supports an intellectual and editorial relationship; it does not establish a modern doctorate.",
+      "sources": [
+        {
+          "title": "Mathematics Genealogy Project · 103067",
+          "url": "https://www.mathgenealogy.org/id.php?id=103067"
+        },
+        {
+          "title": "Newton's own notes on the Cotes correspondence · Cambridge manuscript",
+          "url": "https://newtonproject.ox.ac.uk/view/texts/diplomatic/NATP00283"
+        }
+      ]
+    },
+    "8755:44546": {
+      "kind": "Reported doctoral supervision",
+      "note": "Perrault's live MGP record lists Rounds as Advisor 2 and Friedman as Advisor 1. Cohen's family-tree account agrees, but cites overlapping genealogy sources and is not fully independent corroboration. Michigan's dissertation site returned 403, so the committee/title page was not inspected.",
+      "sources": [
+        {
+          "title": "Mathematics Genealogy Project · 8755",
+          "url": "https://www.mathgenealogy.org/id.php?id=8755"
+        },
+        {
+          "title": "Mathematics Genealogy Project · 44546",
+          "url": "https://www.mathgenealogy.org/id.php?id=44546"
+        },
+        {
+          "title": "William Cohen's account of the shared lineage",
+          "url": "https://www.cs.cmu.edu/~wcohen/lineage.html"
+        },
+        {
+          "title": "Michigan dissertation record · access unavailable in this audit",
+          "url": "https://deepblue.lib.umich.edu/handle/2027.42/188824"
+        }
+      ]
+    },
+    "44546:8024": {
+      "kind": "Reported doctoral supervision",
+      "note": "Rounds' live MGP entry explicitly names Scott. Cohen also records this chain, with overlapping sources. Rounds' own NASA-hosted paper identifies his 1968 Stanford dissertation in its references, but does not establish the advisor relationship. The original dissertation was not obtained.",
+      "sources": [
+        {
+          "title": "Mathematics Genealogy Project · 44546",
+          "url": "https://www.mathgenealogy.org/id.php?id=44546"
+        },
+        {
+          "title": "William Cohen's account of the shared lineage",
+          "url": "https://www.cs.cmu.edu/~wcohen/lineage.html"
+        },
+        {
+          "title": "Rounds' paper · dissertation cited in references",
+          "url": "https://ntrs.nasa.gov/api/citations/19700024927/downloads/19700024927.pdf"
+        }
+      ]
+    },
+    "8024:8011": {
+      "kind": "Reported doctoral supervision",
+      "note": "Scott's Simons Institute biography explicitly names Church as his doctoral advisor and gives Princeton, 1958. Earlier study with Alfred Tarski is not treated as the completed doctorate's supervision.",
+      "sources": [
+        {
+          "title": "UC Berkeley Simons Institute · Dana Scott",
+          "url": "https://simons.berkeley.edu/people/dana-scott"
+        },
+        {
+          "title": "Mathematics Genealogy Project · 8024",
+          "url": "https://www.mathgenealogy.org/id.php?id=8024"
+        }
+      ]
+    },
+    "8011:805": {
+      "kind": "Reported doctoral supervision",
+      "note": "Search-indexed text from the Princeton Church papers finding aid identifies Veblen's guidance and Church's 1927 doctorate. The finding aid itself could not be retrieved directly in this audit. The live MGP record agrees. Dissertation: Alternatives to Zermelo's Assumption.",
+      "sources": [
+        {
+          "title": "Princeton archival finding aid, hosted by Penn · indexed biography",
+          "url": "https://findingaids.library.upenn.edu/records/PRIN_MUDD_C0948"
+        },
+        {
+          "title": "Mathematics Genealogy Project · 8011",
+          "url": "https://www.mathgenealogy.org/id.php?id=8011"
+        }
+      ]
+    },
+    "805:806": {
+      "kind": "Reported doctoral supervision",
+      "note": "Veblen's Royal Society of Edinburgh obituary, reproduced by St Andrews, explicitly describes his doctoral supervision by E. H. Moore. This is Eliakim Hastings Moore.",
+      "sources": [
+        {
+          "title": "Royal Society of Edinburgh obituary · Veblen",
+          "url": "https://mathshistory.st-andrews.ac.uk/Obituaries/Veblen_RSE_Obituary/"
+        },
+        {
+          "title": "Mathematics Genealogy Project · 805",
+          "url": "https://www.mathgenealogy.org/id.php?id=805"
+        }
+      ]
+    },
+    "806:7865": {
+      "kind": "Reported doctoral supervision",
+      "note": "Celebratio Mathematica's dissertation entry explicitly records H. A. Newton as advisor; the live MGP record agrees. This Newton is Hubert Anson Newton, not Isaac Newton.",
+      "sources": [
+        {
+          "title": "Celebratio Mathematica · Moore's dissertation entry",
+          "url": "https://celebratio.org/Moore_EH/article/98/"
+        },
+        {
+          "title": "Mathematics Genealogy Project · 806",
+          "url": "https://www.mathgenealogy.org/id.php?id=806"
+        }
+      ]
+    },
+    "7865:26995": {
+      "kind": "Later study; not doctoral supervision",
+      "note": "H. A. Newton's record lists his Yale B.A. in 1850. The National Academy's history describes later study with Chasles in Europe; the record's degree date is not the date of that relationship.",
+      "sources": [
+        {
+          "title": "National Academy historical account",
+          "url": "https://www.ncbi.nlm.nih.gov/books/NBK221935/"
+        },
+        {
+          "title": "Mathematics Genealogy Project · 7865",
+          "url": "https://www.mathgenealogy.org/id.php?id=7865"
+        }
+      ]
+    },
+    "26995:17865": {
+      "kind": "Recorded advisor link",
+      "note": "The Mathematics Genealogy Project records this connection. Its precise relationship type has not been independently verified; it may represent advising, teaching, or another intellectual relationship.",
+      "sources": [
+        {
+          "title": "Mathematics Genealogy Project · 26995",
+          "url": "https://www.mathgenealogy.org/id.php?id=26995"
+        }
+      ]
+    },
+    "17865:17864": {
+      "kind": "Teacher–student relationship",
+      "note": "Poisson's 1841 Royal Astronomical Society obituary explicitly identifies Lagrange as his teacher. This supports teaching, without turning the entire historical path into a doctoral chain.",
+      "sources": [
+        {
+          "title": "Poisson's RAS obituary",
+          "url": "https://mathshistory.st-andrews.ac.uk/Obituaries/Poisson_RAS/"
+        }
+      ]
+    },
+    "17864:38586": {
+      "kind": "Correspondence; explicitly no degree",
+      "note": "The live MGP page labels the Euler relationship 'no degree' and describes correspondence on variational calculus. A separate B.A. entry names Beccaria. Geneagrapher combines both advisors into one list and retains Torino / 1754, losing this distinction.",
+      "sources": [
+        {
+          "title": "Mathematics Genealogy Project · 17864",
+          "url": "https://www.mathgenealogy.org/id.php?id=17864"
+        },
+        {
+          "title": "Scholarly account of the Lagrange–Euler letters",
+          "url": "https://mathshistory.st-andrews.ac.uk/DSB/Lagrange.pdf"
+        }
+      ]
+    },
+    "74313:67643": {
+      "kind": "Influence; explicitly not a formal advisor",
+      "note": "Newton's live MGP record explicitly says Barrow was not a formal advisor, while describing his influence. The graph's generic advisor field omits that qualification.",
+      "sources": [
+        {
+          "title": "Mathematics Genealogy Project · 74313",
+          "url": "https://www.mathgenealogy.org/id.php?id=74313"
+        }
+      ]
+    },
+    "67643:133302": {
+      "kind": "Postgraduation mathematical contact",
+      "note": "Barrow's live MGP note says he worked with Viviani in Florence after graduating. It distinguishes this from his classics and theology mentorship under James Duport. This note is a database assertion, not independent archival verification.",
+      "sources": [
+        {
+          "title": "Mathematics Genealogy Project · 67643",
+          "url": "https://www.mathgenealogy.org/id.php?id=67643"
+        }
+      ]
+    },
+    "133302:134975": {
+      "kind": "Recorded advisor link",
+      "note": "The Mathematics Genealogy Project records this connection. Its precise relationship type has not been independently verified; it may represent advising, teaching, or another intellectual relationship.",
+      "sources": [
+        {
+          "title": "Mathematics Genealogy Project · 133302",
+          "url": "https://www.mathgenealogy.org/id.php?id=133302"
+        }
+      ]
+    },
+    "38586:53410": {
+      "kind": "Recorded advisor link",
+      "note": "The Mathematics Genealogy Project records this connection. Its precise relationship type has not been independently verified; it may represent advising, teaching, or another intellectual relationship.",
+      "sources": [
+        {
+          "title": "Mathematics Genealogy Project · 38586",
+          "url": "https://www.mathgenealogy.org/id.php?id=38586"
+        }
+      ]
+    },
+    "53410:54440": {
+      "kind": "Recorded advisor link",
+      "note": "The Mathematics Genealogy Project records this connection. Its precise relationship type has not been independently verified; it may represent advising, teaching, or another intellectual relationship.",
+      "sources": [
+        {
+          "title": "Mathematics Genealogy Project · 53410",
+          "url": "https://www.mathgenealogy.org/id.php?id=53410"
+        }
+      ]
+    },
+    "54440:143011": {
+      "kind": "Recorded advisor link",
+      "note": "The Mathematics Genealogy Project records this connection. Its precise relationship type has not been independently verified; it may represent advising, teaching, or another intellectual relationship.",
+      "sources": [
+        {
+          "title": "Mathematics Genealogy Project · 54440",
+          "url": "https://www.mathgenealogy.org/id.php?id=54440"
+        }
+      ]
+    },
+    "143011:60985": {
+      "kind": "Intellectual heritage · explicitly qualified by MGP",
+      "note": "MGP explains that it links Malebranche to Leibniz to represent intellectual heritage. This is not evidence that Leibniz supervised a doctorate or formally taught Malebranche.",
+      "sources": [
+        {
+          "title": "Mathematics Genealogy Project · 143011",
+          "url": "https://www.mathgenealogy.org/id.php?id=143011"
+        }
+      ]
+    }
+  }
+}

@@ -68,31 +68,20 @@ const researchProjects = [
 
 function ProjectLinks({ project }) {
   const links = [];
-
   if (project.conferenceLink && project.conference) {
     links.push({
       href: project.conferenceLink,
-      label:
-        project.status === 'current'
-          ? `Accepted at ${project.conference}`
-          : `Published at IEEE ${project.conference}`,
+      label: project.status === 'current'
+        ? `Accepted at ${project.conference}`
+        : `Published at IEEE ${project.conference}`,
     });
   }
-
-  if (project.paperLink) {
-    links.push({ href: project.paperLink, label: 'View Paper' });
-  }
+  if (project.paperLink) links.push({ href: project.paperLink, label: 'View paper' });
 
   return (
-    <div className="mt-4 flex flex-wrap gap-3">
+    <div className="mt-2 flex flex-wrap gap-x-4 gap-y-1 text-sm">
       {links.map((link) => (
-        <a
-          key={`${project.title}-${link.label}`}
-          href={link.href}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="pill-link"
-        >
+        <a key={link.href} href={link.href} target="_blank" rel="noopener noreferrer" className="text-link">
           {link.label}
         </a>
       ))}
@@ -100,81 +89,49 @@ function ProjectLinks({ project }) {
   );
 }
 
-function ResearchCard({ project }) {
+function ResearchRow({ project }) {
   return (
-    <article
-      data-reveal="card"
-      className="surface-card p-6 sm:p-8"
-    >
+    <article className="grid gap-3 py-4 sm:grid-cols-[144px_minmax(0,1fr)] sm:gap-5">
       {project.image && (
-        <div className="mb-6 overflow-hidden rounded-2xl border border-slate-200 bg-slate-50 dark:border-slate-800 dark:bg-slate-950/60">
-          <img
-            src={project.image}
-            alt={project.title}
-            className="h-52 w-full object-cover object-center sm:h-60"
-          />
-        </div>
+        <img
+          src={project.image}
+          alt={project.title}
+          loading="lazy"
+          width="144"
+          height="100"
+          className="h-24 w-36 rounded-sm border border-slate-200 bg-slate-50 object-contain"
+        />
       )}
-      <div className="flex flex-wrap items-center gap-2">
-        <span className="meta-chip">
-          {project.status === 'current' ? 'Current project' : 'Past project'}
-        </span>
-        {project.underReview && <span className="meta-chip">Ongoing research</span>}
-      </div>
-      <h4 className="mt-4 text-xl font-semibold leading-snug text-slate-950 dark:text-slate-50 sm:text-2xl">
-        {project.title}
-      </h4>
-      <ProjectLinks project={project} />
-      <div className="mt-5 text-base leading-7 text-slate-600 dark:text-slate-300">
-        {project.description}
+      <div className="min-w-0">
+        <h4 className="entry-title">{project.title}</h4>
+        <div className="body-copy mt-1.5">{project.description}</div>
+        <ProjectLinks project={project} />
       </div>
     </article>
   );
 }
 
 function Research() {
-  const currentProjects = researchProjects.filter(p => p.status === 'current');
-  const pastProjects = researchProjects.filter(p => p.status === 'past');
+  const groups = [
+    { status: 'current', title: 'Current projects' },
+    { status: 'past', title: 'Past projects' },
+  ];
 
   return (
-    <section id="research" className="section-shell border-t border-slate-200 dark:border-slate-800">
+    <section id="research" className="section-shell">
       <div className="page-shell">
-        <p className="section-kicker">Research</p>
-        <h2 className="section-title">Selected research and publications</h2>
-        <p className="section-intro">
-          My work spans ML4SE, applied NLP, and generative AI systems, with an
-          emphasis on evaluation, reliability, and real-world utility.
-        </p>
-
-        <div className="mt-10">
-          <div className="mb-6 flex flex-col gap-2 sm:flex-row sm:items-end sm:justify-between">
-            <div>
-              <h3 className="text-2xl font-semibold tracking-tight text-slate-950 dark:text-slate-50">
-                Current projects
-              </h3>
+        <h2 className="section-title">Research & publications</h2>
+        <p className="section-intro">ML4SE, applied NLP, and generative AI systems, with a focus on evaluation and reliability.</p>
+        {groups.map((group) => (
+          <div key={group.status} className="mt-4">
+            <h3 className="section-kicker border-b border-slate-300 pb-2">{group.title}</h3>
+            <div className="divide-y divide-slate-200">
+              {researchProjects.filter((project) => project.status === group.status).map((project) => (
+                <ResearchRow key={project.title} project={project} />
+              ))}
             </div>
           </div>
-          <div data-reveal="section" className="grid gap-6 lg:grid-cols-3">
-            {currentProjects.map((project, idx) => (
-              <ResearchCard key={idx} project={project} />
-            ))}
-          </div>
-        </div>
-
-        <div className="mt-12">
-          <div className="mb-6 flex flex-col gap-2 sm:flex-row sm:items-end sm:justify-between">
-            <div>
-              <h3 className="text-2xl font-semibold tracking-tight text-slate-950 dark:text-slate-50">
-                Past projects
-              </h3>
-            </div>
-          </div>
-          <div data-reveal="section" className="grid gap-6 lg:grid-cols-3">
-            {pastProjects.map((project, idx) => (
-              <ResearchCard key={idx} project={project} />
-            ))}
-          </div>
-        </div>
+        ))}
       </div>
     </section>
   );

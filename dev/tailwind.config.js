@@ -2,14 +2,14 @@
 const defaultTheme = require('tailwindcss/defaultTheme');
 
 module.exports = {
-  darkMode: 'class',
   content: [
     "./src/**/*.{js,jsx,ts,tsx}",
   ],
   theme: {
     extend: {
       fontFamily: {
-        sans: ['"STIX Two Text"', ...defaultTheme.fontFamily.serif],
+        sans: ['"Source Sans 3"', ...defaultTheme.fontFamily.sans],
+        display: ['"Cormorant Garamond"', ...defaultTheme.fontFamily.serif],
       },
       colors: {
         brand: {
@@ -23,7 +23,7 @@ module.exports = {
         },
       },
       boxShadow: {
-        soft: '0 24px 60px -30px rgba(15, 23, 42, 0.35)',
+        soft: '0 8px 28px -18px rgba(15, 23, 42, 0.2)',
       },
     },
   },

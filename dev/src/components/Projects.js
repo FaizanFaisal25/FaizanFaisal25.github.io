@@ -1,11 +1,20 @@
 import React from 'react';
-import { FaGithub } from 'react-icons/fa';
 import llmGameTheoryImage from '../assets/projects/llmgametheory_gif.gif';
 import ghostNetImage from '../assets/projects/ghostnet.png';
 import argueAiImage from '../assets/projects/argueai.png';
+import openWorldImage from '../assets/projects/open_world.webp';
 
 const OpenSourceProjects = () => {
   const projects = [
+    {
+      title: 'Open World',
+      image: openWorldImage,
+      imageAlt: 'Open World game scene on C Street in Davis, California',
+      description: 'A third-person browser game that turns real map data into explorable streets, with driving, traffic, and live weather.',
+      link: 'https://github.com/muhammad-hassnain/open-world',
+      demoLink: 'https://open-world-sigma-two.vercel.app/',
+      status: 'Current project',
+    },
     {
       title: 'LLMGameTheory',
       image: llmGameTheoryImage,
@@ -27,41 +36,37 @@ const OpenSourceProjects = () => {
   ];
 
   return (
-    <section className="section-shell border-t border-slate-200 dark:border-slate-800" id="open-source-projects">
+    <section className="section-shell" id="open-source-projects">
       <div className="page-shell">
-        <p className="section-kicker">Projects</p>
-        <h2 className="section-title">Open source work</h2>
-        <p className="section-intro">
-          Selected repositories exploring LLM agents, debate systems, and collaborative AI behavior.
-        </p>
-
-        <div className="mt-10 grid gap-6 md:grid-cols-2 xl:grid-cols-3">
-          {projects.map((project, index) => (
-            <article key={index} data-reveal="card" className="surface-card flex h-full flex-col p-6 sm:p-7">
-              {project.image && (
-                <div className="mb-5 overflow-hidden rounded-2xl border border-slate-200 bg-slate-50 dark:border-slate-800 dark:bg-slate-950/60">
-                  <img
-                    src={project.image}
-                    alt={project.title}
-                    className="h-44 w-full object-cover object-center"
-                  />
+        <h2 className="section-title">Open source projects</h2>
+        <div className="mt-2 grid gap-x-7 md:grid-cols-2">
+          {projects.map((project) => (
+            <article key={project.title} className="grid grid-cols-[88px_minmax(0,1fr)] items-start gap-3 border-b border-slate-200 py-4 sm:grid-cols-[112px_minmax(0,1fr)]">
+              <img
+                src={project.image}
+                alt={project.imageAlt || project.title}
+                loading="lazy"
+                width="112"
+                height="80"
+                className="aspect-[7/5] w-full rounded-sm border border-slate-200 bg-slate-50 object-cover"
+              />
+              <div className="min-w-0">
+                <div className="flex flex-wrap items-baseline gap-x-2">
+                  <h3 className="entry-title">{project.title}</h3>
+                  {project.status && <span className="meta-label">{project.status}</span>}
                 </div>
-              )}
-              <div className="flex items-start justify-between gap-4">
-                <h3 className="text-xl font-semibold text-slate-950 dark:text-slate-50">{project.title}</h3>
-                <FaGithub className="mt-1 shrink-0 text-lg text-slate-400 dark:text-slate-500" />
+                <p className="body-copy mt-1">{project.description}</p>
+                <div className="mt-2 flex flex-wrap gap-x-4 gap-y-1 text-sm">
+                  {project.demoLink && (
+                    <a href={project.demoLink} className="text-link" target="_blank" rel="noopener noreferrer">
+                      Play live demo
+                    </a>
+                  )}
+                  <a href={project.link} className="text-link" target="_blank" rel="noopener noreferrer">
+                    View repository
+                  </a>
+                </div>
               </div>
-              <p className="mt-4 flex-1 text-sm leading-7 text-slate-600 dark:text-slate-300">
-                {project.description}
-              </p>
-              <a
-                href={project.link}
-                className="mt-6 inline-flex items-center gap-2 text-sm font-medium text-brand-700 hover:text-brand-600 dark:text-brand-400 dark:hover:text-brand-300"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                View repository
-              </a>
             </article>
           ))}
         </div>

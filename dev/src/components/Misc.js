@@ -1,77 +1,49 @@
 import React from 'react';
 import NNAnimation from './NNAnimation';
+import AcademicLineage from './AcademicLineage';
 
 function Misc() {
   return (
-    <section id="misc" className="section-shell border-t border-slate-200 dark:border-slate-800">
+    <section id="misc" className="section-shell">
       <div className="page-shell">
-        <p className="section-kicker">Miscellaneous</p>
-        <h2 className="section-title">A few extra interests</h2>
-        <p className="section-intro">
-          A small window into the books, ideas, and visual curiosities that I keep returning to.
-        </p>
-
-        <div className="mt-10 grid gap-6 lg:grid-cols-[0.9fr_1.1fr]">
-          <div className="space-y-6">
-            <article data-reveal="card" className="surface-card p-6 sm:p-7">
-              <h3 className="text-xl font-semibold text-slate-950 dark:text-slate-50">
-                Books I recently enjoyed
-              </h3>
-              <div className="mt-5 space-y-4">
-                <div className="rounded-2xl bg-slate-50 p-4 dark:bg-slate-800/80">
-                  <a
-                    href="https://www.goodreads.com/book/show/117047.The_Blind_Watchmaker"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-link text-base font-semibold"
-                  >
-                    The Blind Watchmaker
-                  </a>
-                  <p className="mt-2 text-sm leading-6 text-slate-600 dark:text-slate-300">
-                    A compelling exploration of evolution and complexity, focusing
-                    on how natural selection shapes life on Earth.
-                  </p>
-                </div>
-                <div className="rounded-2xl bg-slate-50 p-4 dark:bg-slate-800/80">
-                  <a
-                    href="https://www.goodreads.com/book/show/41817484-the-case-against-reality"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-link text-base font-semibold"
-                  >
-                    The Case Against Reality
-                  </a>
-                  <p className="mt-2 text-sm leading-6 text-slate-600 dark:text-slate-300">
-                    A provocative argument that our direct experience of reality
-                    may be more constructed than it appears.
-                  </p>
-                </div>
-              </div>
-            </article>
-
-            <article data-reveal="card" className="surface-card p-6 sm:p-7">
-              <span className="meta-chip">Favorite quote</span>
-              <blockquote className="mt-4 text-lg font-medium leading-8 text-slate-900 dark:text-slate-100">
-                "The more you know, the more you realize you don’t know."
-              </blockquote>
-              <p className="mt-2 text-sm text-slate-500 dark:text-slate-400">Aristotle</p>
-            </article>
-          </div>
-
-          <article data-reveal="card" className="surface-card p-6 sm:p-7">
-            <span className="meta-chip">Interactive</span>
-            <h3 className="mt-4 text-xl font-semibold text-slate-950 dark:text-slate-50">
-              Neural network animation
-            </h3>
-            <p className="mt-3 text-sm leading-6 text-slate-600 dark:text-slate-300">
-              A JavaScript-based visual that I like because it captures the motion
-              and structure of layered systems without reducing them to a static image.
+        <h2 className="section-title">Miscellaneous</h2>
+        <div className="mt-4 grid gap-6 md:grid-cols-3">
+          <article>
+            <h3 className="entry-title">Recent reading</h3>
+            <ul className="body-copy mt-2 space-y-3">
+              <li>
+                <a href="https://www.goodreads.com/book/show/117047.The_Blind_Watchmaker" target="_blank" rel="noopener noreferrer" className="text-link">
+                  The Blind Watchmaker
+                </a>
+                <p className="mt-1 text-slate-600">Evolution, complexity, and how natural selection shapes life on Earth.</p>
+              </li>
+              <li>
+                <a href="https://www.goodreads.com/book/show/41817484-the-case-against-reality" target="_blank" rel="noopener noreferrer" className="text-link">
+                  The Case Against Reality
+                </a>
+                <p className="mt-1 text-slate-600">An exploration of perception and our experience of reality.</p>
+              </li>
+            </ul>
+          </article>
+          <article>
+            <h3 className="entry-title">Academic lineage</h3>
+            <p className="body-copy mt-2">
+              My academic lineage through Prem Devanbu reaches Isaac Newton,
+              Euler, and other familiar names through advising, teaching,
+              and intellectual influence.
             </p>
-            <div className="mt-6">
-              <NNAnimation />
-            </div>
+            <AcademicLineage />
+          </article>
+          <article>
+            <h3 className="entry-title">A neural network in motion</h3>
+            <p className="body-copy mt-2">A tiny network working through the XOR problem.</p>
+            <div className="mt-2 max-w-xs"><NNAnimation /></div>
           </article>
         </div>
+        <blockquote className="quote-text mt-5 border-t border-slate-200 pt-3">
+          “The more you know, the more you realize you don’t know.”
+          <cite className="meta-label ml-2 not-italic">— Aristotle</cite>
+        </blockquote>
       </div>
     </section>
   );
