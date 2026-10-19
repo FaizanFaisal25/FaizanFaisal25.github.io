@@ -7,6 +7,10 @@ function Misc() {
     <section id="misc" className="section-shell">
       <div className="page-shell">
         <h2 className="section-title">Miscellaneous</h2>
+        <blockquote className="quote-text mt-3 border-b border-slate-200 pb-3">
+          “The more you know, the more you realize you don’t know.”
+          <cite className="meta-label ml-2 not-italic">— Aristotle</cite>
+        </blockquote>
         <div className="mt-4 grid gap-6 md:grid-cols-3">
           <article>
             <h3 className="entry-title">Recent reading</h3>
@@ -26,11 +30,11 @@ function Misc() {
             </ul>
           </article>
           <article>
-            <h3 className="entry-title">Academic lineage</h3>
+            <h3 className="entry-title">A small discovery</h3>
             <p className="body-copy mt-2">
-              My academic lineage through Prem Devanbu reaches Isaac Newton,
-              Euler, and other familiar names through advising, teaching,
-              and intellectual influence.
+              While exploring my academic lineage through Prem Devanbu, I came
+              across Newton, Euler, and a few other names from my textbooks.
+              That was a fun surprise.
             </p>
             <AcademicLineage />
           </article>
@@ -40,10 +44,6 @@ function Misc() {
             <div className="mt-2 max-w-xs"><NNAnimation /></div>
           </article>
         </div>
-        <blockquote className="quote-text mt-5 border-t border-slate-200 pt-3">
-          “The more you know, the more you realize you don’t know.”
-          <cite className="meta-label ml-2 not-italic">— Aristotle</cite>
-        </blockquote>
       </div>
     </section>
   );
