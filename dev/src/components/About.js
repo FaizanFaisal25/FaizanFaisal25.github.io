@@ -46,7 +46,7 @@ const About = () => {
             </p>
             <ul className="mt-2 space-y-2">
               <li>
-                <h3 className="entry-title">ML4SE</h3>
+                <h3 className="entry-title">AI4SE</h3>
                 <p className="body-copy">
                   Improving LLMs for code generation and related software
                   engineering tasks.

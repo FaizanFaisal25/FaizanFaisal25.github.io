@@ -121,7 +121,7 @@ function Research() {
     <section id="research" className="section-shell">
       <div className="page-shell">
         <h2 className="section-title">Research & publications</h2>
-        <p className="section-intro">ML4SE, applied NLP, and generative AI systems, with a focus on evaluation and reliability.</p>
+        <p className="section-intro">AI4SE, applied NLP, and generative AI systems, with a focus on evaluation and reliability.</p>
         {groups.map((group) => (
           <div key={group.status} className="mt-4">
             <h3 className="section-kicker border-b border-slate-300 pb-2">{group.title}</h3>
